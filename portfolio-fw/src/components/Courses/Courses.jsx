@@ -48,7 +48,7 @@ const Courses = () => {
         <div>
             <div className="flex gap-2">
                 <img src="/sublogo1.svg" alt="sublogo" />
-                <h1 className="text-xl  lg:font-medium text-gray-900 dark:text-white">
+                <h1 className="md:text-2xl  font-medium text-gray-900 dark:text-white">
                     My Courses
                 </h1>
             </div>
@@ -56,7 +56,7 @@ const Courses = () => {
                 <h2 className="text-2xl md:text-3xl lg:text-5xl  mt-5 font-medium text-gray-800 dark:text-white">
                     Shaping Futures Through
                 </h2>
-                <h2 className="text-3xl md:text-4xl lg:text-6xl  mt-8 font-medium text-gray-800 dark:text-white italic ml-[16%] ">
+                <h2 className="text-3xl md:text-4xl lg:text-6xl mt-4  md:mt-8 font-medium text-gray-800 dark:text-white italic ml-[16%] ">
                     Smart<span className="text-yellow-500 "> Learning</span>
                 </h2>
             </div>
@@ -64,19 +64,19 @@ const Courses = () => {
             {/* courses */}
             <section className=" mt-16">
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-14 2xl:gap-20">
                     {offeredCourses.map((course) => (
 
                        
                             <div
                                 key={course.id}
                                 onClick={() => setSelectedCourse(course)}
-                                className="cursor-pointer overflow-hidden bg-base-200 dark:bg-[#26393a] hover:scale-105 transition-transform rounded-xl dark:border dark:border-[#234748] shadow-lg border border-gray-300"
+                                className="cursor-pointer overflow-hidden bg-base-200 dark:bg-[#26393a] hover:scale-105 transition-transform rounded-xl dark:border dark:border-[#234748] shadow-lg border border-gray-300 xl:p-4 2xl:p-8"
                             >
                                 <img
                                     src={course.imageUrl}
                                     alt="Course"
-                                    className="h-55 w-full  p-2 rounded-t-2xl"
+                                    className="h-55 xl:h-65 2xl:h-75 w-full  p-2 rounded-t-2xl"
                                 />
                                 <div className="p-4">
                                     <div className='flex gap-1 items-center'>

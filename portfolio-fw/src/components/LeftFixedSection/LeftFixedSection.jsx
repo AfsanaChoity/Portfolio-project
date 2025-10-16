@@ -9,21 +9,22 @@ import { LuDownload } from "react-icons/lu";
 const LeftFixedSection = () => {
   return (
     // <div className="bg-base-200 dark:bg-[#26393a] p-3 flex flex-col gap-4  rounded-xl dark:border dark:border-[#234748] shadow-lg border border-gray-300">
-    <div className="md:max-h-screen bg-base-200 dark:bg-[#26393a] p-3 flex flex-col gap-4  rounded-xl dark:border dark:border-[#234748] shadow-lg border border-gray-300">
-      <div className="flex flex-col justify-center items-center  object-contain ">
-        <img className="lg:w-3/5 h-full rounded-xl" src="\ProfileImage.jpg" alt="" />
+    <div className="md:h-[calc(100vh-8rem)] lg:h-[calc(100vh-10rem)] bg-base-200 dark:bg-[#26393a] p-3 flex flex-col gap-4  rounded-xl dark:border dark:border-[#234748] shadow-lg border border-gray-300 ">
+      <div className="flex flex-col justify-center items-center  object-contain lg:pt-4">
+        <img className=" h-full rounded-xl" src="\ProfileImage.jpg" alt="" />
       </div>
       <div className=" flex flex-col justify-center items-center gap-2 ">
-        <div className="flex justify-center items-center text-2xl font-bold text-primary dark:text-primary-content">
+        <div className="flex justify-center items-center lg:text-2xl font-bold text-primary dark:text-primary-content">
           
           <h1>Md. Ferdous Wahid</h1>
         </div>
-        <div className="flex justify-center items-center text-justify p-1">
-          <p className="text-center text-xs w-[75%] lg:w-[98%]">
+        <div className="flex justify-center items-center  px-4 py-2 2xl:px-10">
+          {/* <p className="text-center text-xs lg:text-sm w-[98%] lg:w-[88%] xl:w-[78%] mb-2 md:mb-4"> */}
+          <p className=" text-xs lg:text-sm   mb-2 md:mb-4 text-center">
               Assistant Professor in Electrical and Electronic Engineering at <a href="https://hstu.ac.bd/" target="blank">HSTU</a> , specializing in biomedical image processing, machine learning, and renewable energy research.
           </p>
         </div>
-        <div className="flex gap-4 justify-center items-center">
+        <div className="flex gap-4 justify-center items-center mb-2 md:mb-6">
           {[
             { icon: <BsTelephone className="text-xs"/>, href: "tel:+8801718844106" },
             { icon: <MdAlternateEmail className="text-xs"/>, href: "mailto:mfwahid26@gmail.com" },
@@ -42,7 +43,7 @@ const LeftFixedSection = () => {
           ))}
         </div>
         <div>
-          <a href="/MFW_CV.pdf" download className="btn dark:bg-yellow-500 bg-gray-300 rounded-full text-black flex items-center gap-2">
+          <a href="/MFW_CV.pdf" download className="mb-2 btn dark:bg-yellow-500 bg-gray-300 rounded-full text-black flex items-center gap-2">
           Download CV <LuDownload />
           </a>
         </div>

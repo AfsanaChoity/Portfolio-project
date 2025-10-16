@@ -29,10 +29,10 @@ const ContactForm = () => {
   };
 
   return (
-    <section className=" max-w-5xl mx-auto">
+    <section className=" mb-6 ">
       <div className="flex items-center gap-2 mb-8">
         <img src="/sublogo1.svg" alt="sublogo" />
-        <h1 className="text-2xl lg:font-medium text-gray-900 dark:text-white">
+        <h1 className="md:text-2xl font-medium text-gray-900 dark:text-white">
           Get in Touch!
         </h1>
       </div>

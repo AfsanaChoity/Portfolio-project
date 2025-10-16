@@ -43,9 +43,9 @@ const Navbar = () => {
   // const toggleTheme = () => setIsDark(!isDark);
 
   return (
-    <div className="navbar bg-base-100 dark:bg-[#1F3434]  fixed top-0 left-0 right-0 z-50">
+    <div className="navbar  xl:px-16 bg-base-100 dark:bg-[#1F3434]  fixed top-0 left-0 right-0 z-50 pt-4">
       <div className="navbar-start">
-        <div className="dropdown lg:ml-5">
+        <div className="dropdown ">
           <div
             tabIndex={0}
             role="button"
@@ -92,7 +92,7 @@ const Navbar = () => {
         </div>
         <a
           href="#home"
-          className="btn btn-link text-4xl no-underline hover:no-underline"
+          className="btn btn-link md:text-2xl lg:text-3xl  xl:text-4xl no-underline hover:no-underline"
         >
           {/* <img className="w-32 h-10" src="/logo3.png" alt="logo" /> */}
           <span className="hidden md:inline text-black dark:text-white font-bold ">
@@ -129,14 +129,14 @@ const Navbar = () => {
           onClick={toggleTheme}
           aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} + mode`}
           // className="text-2xl text-white dark:text-yellow-300 absolute top-6 right-6 p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
-          className="text-2xl text-white dark:text-yellow-300 p-2 rounded-full bg-black dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors mr-2"
+          className="cursor-pointer text-2xl text-white dark:text-yellow-300 p-2 rounded-full bg-black dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors mr-2"
         // aria-label="Toggle Theme"
         >
           {/* {isDark ? <FaSun /> : <FaMoon />} */}
           {theme === "dark" ? <FaSun /> : <FaMoon />}
         </button>
         <div className="border-l border-gray-400 h-12 mr-5"></div>
-        <button className="btn bg-white text-black font-medium border-[#e5e5e5] mr-5 lg:mr-10">
+        <button className="btn bg-white text-black font-medium border-[#e5e5e5] ">
           <a  href="#contact" className="flex gap-1 items-center">Contact
             <svg
               aria-label="Email icon"

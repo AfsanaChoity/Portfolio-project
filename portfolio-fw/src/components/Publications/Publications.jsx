@@ -113,15 +113,15 @@ const Publications = () => {
   );
 
   return (
-    <section className=" max-w-5xl mx-auto mt-16">
+    <section className=" mt-16">
       <div className="flex gap-2 mb-8">
         <img src="/sublogo1.svg" alt="sublogo" />
-        <h1 className="text-2xl lg:font-medium text-gray-900 dark:text-white">
+        <h1 className="md:text-2xl font-medium text-gray-900 dark:text-white">
           Publications
         </h1>
       </div>
       {/* Tabs */}
-      <div className="flex space-x-4 mb-8">
+      <div className="flex flex-col md:flex-row gap-4 mb-8">
         <button
           onClick={() => setActiveType("journal")}
           className={`px-4 py-2 rounded ${
@@ -148,13 +148,13 @@ const Publications = () => {
         {filteredPublications.map((pub) => (
           <div
             key={pub.id}
-            className="overflow-hidden bg-base-200 dark:bg-[#26393a] hover:scale-105 transition-transform rounded-xl dark:border dark:border-[#234748] shadow-lg border border-gray-300"
+            className="overflow-hidden bg-base-200 dark:bg-[#26393a] hover:scale-105 transition-transform rounded-xl dark:border dark:border-[#234748] shadow-lg border border-gray-300 xl:p-4"
           >
-            <div className="h-2/5">
+            <div className="">
             <img
               src={pub.imageUrl}
               alt="publication"
-              className="w-full p-2 h-40 rounded-t-2xl"
+              className="w-full p-2 h-50 xl:h-65 rounded-t-2xl"
             />
             </div>
             <div className="p-4 h-3/5 mt-4">

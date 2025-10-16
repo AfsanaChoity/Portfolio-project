@@ -51,10 +51,10 @@ const Research = () => {
   }
 
   return (
-    <section className=" max-w-5xl mx-auto">
+    <section className="">
       <div className="flex gap-2 mb-8">
         <img src="/sublogo1.svg" alt="sublogo" />
-        <h1 className="text-2xl lg:font-medium text-gray-900 dark:text-white">
+        <h1 className="md:text-2xl font-medium text-gray-900 dark:text-white">
           Research Projects
         </h1>
       </div>
@@ -62,12 +62,12 @@ const Research = () => {
         {researchProjects.map((project) => (
           <div
             key={project.id}
-            className="overflow-hidden bg-base-200 dark:bg-[#26393a] hover:scale-105 transition-transform rounded-xl dark:border dark:border-[#234748] shadow-lg border border-gray-300"
+            className="overflow-hidden bg-base-200 dark:bg-[#26393a] hover:scale-105 transition-transform rounded-xl dark:border dark:border-[#234748] shadow-lg border border-gray-300 xl:p-4"
           >
             <img
               src={project.imageUrl}
               alt="project"
-              className="h-55 w-full object-cover p-2 rounded-t-2xl"
+              className="h-55 2xl:h-65 w-full object-cover p-2 rounded-t-2xl"
             />
             <div className="p-4">
               <h3 className="text-lg text-gray-800 dark:text-gray-200 uppercase">
